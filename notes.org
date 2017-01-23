@@ -1,0 +1,29 @@
+* ICON symposium on distributional learning
+
+  Organized by Katerina Chladkova.
+
+** Topic
+
+   My idea was that each speaker will present his/her model of distributional
+   learning, show some human data, and discuss how their model addresses some
+   language phenomena such as accent adaptation, or cross-language perception
+   etc.  Another point to address could be what factors affect the success of
+   learning, for instance the availability/necessity of lexical supervision,
+   explicit feedback, acoustic saliency of the learned contrast. Any other ideas
+   are also welcome.
+
+   Each talk will be at least 30 minutes. The abstract should be max 300 words.
+   Would you be able to send me yours by mid January?  Please let me know if you
+   have any questions.
+
+** Plan
+
+   Need to make contrast with other people's theories.  Sounds like Joe will be
+   there, but I'm not sure who else.  Big contrast is that it's *life long*, and
+   *hierarchical*: in the ideal adapter, listeners are learning distribution not
+   only of _sounds_, but of _talkers_ themselves.  I think communicating that
+   insight would be useful.
+
+   The other thing is to tie in with cognitive neuroscience.  Prediction error
+   is the natural point of connection there.  Probabilistic inference ==
+   minimize prediction error.
