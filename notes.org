@@ -30,77 +30,9 @@
 
 ** Summary
 
-   The ideal adapter is a computational-level framework for human speech
-   perception (as well as domain-general perception), that starts with the
-   observation that speech perception is a problem of _inference under
-   uncertainty_: speech production is variable
+   Two important points:
 
-   makes two important claims.
-   First, it claims that distributional learning does not stop after a listener
-   acquires their language, but continues throughout life.  Second, it claims
-   that distributional learning is _hierarchical_, where listeners learn
-   distributions of _sounds_ (phonetic categories, phonemes, words, etc.) _and_
-   distributions of _talkers_ (or more specifically, talkers' accents, or the
-   distributions of acoustic cues they produce for each linguistic unit).
-
-   Both of these claims are derived from first principles, based on the nature
-   of the problem that human speech poses to the perceptual system.
-
-
-
-
-
-
-   Talker variability means that distributional learning must 1) continue
-   throuhgout life and 2) be _hierarchical_, in the sense that ...
-
-   The central insight of the ideal adapter
-   framework is that this distributional learning must continue throughout life,
-   because talkers vary in the particular distributions they produce.  Moreover,
-   using the formal tools of statistical inference, such distributional learning
-   can be formalized as inference at a higher level: listeners must _infer_ cue
-   distributions by combining information about which distributions are more or
-   less compatible with the speech they are currently processing with their
-   prior experience in other situations, which makes some distributions more or
-   less likely /a priori/.
-
-   - First point explains (in a quantitative way) rapid adaptation to an
-     unfamiliar talker.
-   - Second point explains how listeners balance stability and flexibility
-
-
-
-   Recent computational work suggests that such
-   distributional learning does not stop 
-   
-   
-
-   and effective speech perception requires that listeners have
-   reasonably good knowledge of what these distributions are.  Moreover, talkers
-   themselves produce different distributions
-   
-   Speech perception as probabilistic inference.  Depends on knowing
-   distributions of cues for each category.  Talker variability means that these
-   distributions are different from one situation to the next.  So listeners
-   need to continue to learn distributions _throughout life_.  Ideal adapter
-   treats this distributional learning as probabilistic inference at another
-   level: need to infer not only _what_ a talker is saying, but also _how_ they say
-   things (the underlying distributions).  
-
-   Critical insight is that listeners
-   can use their previous experience to do this distributional learning much
-   more efficiently than during acquisition.  If listeners learn the
-   distribution of talker's accents, then they can use this knowledge as an
-   informative prior about what kinds of cue distributions they are more or less
-   likely to encounter.
-
-
-   individual talkers are relatively
-   consistent in their cue distributions, and so previous experience with a
-   familiar talker is highly informative about the cue distributions they'll
-   produce in the future.
-
-   In this view, the speech perception system (and its neural implementations)
-   attempts to minimize prediction error.
-
-   
+   1. Distribuitonal learning is *life long*: variation requires updating of
+      beliefs for the current context
+   2. Distributional learning is *hierarchical*: need to learn distribution of
+      _talkers_.
