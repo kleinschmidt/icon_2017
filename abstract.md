@@ -1,6 +1,6 @@
 # The ideal adapter: Life-long, hierarchical distributional learning
 
-The _ideal adapter_ is a computational-level theory of how human speech
+The ideal adapter is a computational-level theory of how human speech
 perception copes with variability at various levels.  Even for a single talker,
 speech is highly variable: linguistic units (phonetic categories, words, etc.)
 are _distributions_ of acoustic cues.  This means that speech perception is a

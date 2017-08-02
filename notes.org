@@ -4,7 +4,7 @@
 
 ** Topic
 
-   My idea was that each speaker will present his/her model of distributional
+   "My idea was that each speaker will present his/her model of distributional
    learning, show some human data, and discuss how their model addresses some
    language phenomena such as accent adaptation, or cross-language perception
    etc.  Another point to address could be what factors affect the success of
@@ -14,7 +14,7 @@
 
    Each talk will be at least 30 minutes. The abstract should be max 300 words.
    Would you be able to send me yours by mid January?  Please let me know if you
-   have any questions.
+   have any questions."
 
 ** Plan
 
