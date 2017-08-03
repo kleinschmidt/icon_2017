@@ -1,3 +1,8 @@
+# TODO
+
+* Keep belief updating animation slides?
+* Include modeling in constraint study?
+
 # Notes for slides
 
 ## WHere do I want to get with this?
@@ -11,8 +16,11 @@ learning.
 ## Skeleton
 
 Intro/motivation: perception in a noisy world, is inference under uncertainty.
-Inference needs distributions.  When distributions change, need _contnuous
-distributional learning_.
+Inference needs distributions: infer explanation of an observed stimulus/cue
+value by working backward, asking how likely that particular stimulus would be
+under that explanation (likelihood, in bayesian terms).  When distributions
+change, there's not a single "correct" set of distributions to learn.  need
+_contnuous distributional learning_. ( slides on recalibration )
 
 
 Now we have a puzzle: I've proposed that the same process that explains language
@@ -20,10 +28,19 @@ _acquisition_ explains _adaptation_ to talker variability.  But learning a
 language is _really really hard_, and adapting to unfamiliar talkers is so easy
 we only rarely notice that we're doing it.  What gives?
 
+the key to this came to be by thinking about distributional learning as itself
+a sort of _inference under uncertainty_ ( Bayes )
+
 we can think of Distr. learning as a process of inference under uncertainty at
 _another level_, or _hierarchical inference_.  two source of information: data
-itself, and _prior expectations_. Where do these come from? Experience with
-other talkers.
+itself, and _prior expectations_.  ( talker is point in distribution space.
+bunch of talkers, learn distribution, rule out a huge number of possibilities )
+
+
+( slide on adapt/generalize/recognize, to
+motivate how good priors help )
+
+Where do these come from? ( god slide ) Experience with other talkers.
 
 ( talker's cue distributions -> point in cue space -> distribution of talkers ->
 clusters of talkers; lots of clusters you _could_ learn, figuring out which
@@ -31,8 +48,17 @@ clusters are most informative is itself an inference process. make explicit
 analogy: learn clusters of sounds so you can classify new sounds; learn clusters
 of talkers so you can adapt to new talkers )
 
-Evidence for this: rapid distributional learning is _constrained_ by range of
+One prediction: if you've learned the distribution of talkers, even at the most
+general level, if you know nothing else about a talker except that they're
+speaking English, that still really narrows down the range of distributions you
+might expect.  And, as a result, you're much more efficient than when you're
+learning the language for the first time.  But the tradeoff is that if you _do_
+encounter someone outside the range of what you've experienced (plus some room
+for error), you're going to have a hard time adapting.  What this predicts is
+that even very rapid distributional learning should be _constrained_ by range of
 cue distributions in the language.
+
+
 
 Why this matters: Something about prediction?  Integrating perception, learning,
 and memory.
